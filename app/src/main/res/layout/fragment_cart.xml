@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragmentuser.CartFragment">
+
+     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="640dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical" />
+
+     <Button
+         android:id="@+id/delete_all"
+         android:layout_width="303dp"
+         android:layout_height="60dp"
+         android:layout_below="@+id/recyclerView"
+         android:layout_marginHorizontal="65dp"
+         android:layout_marginTop="10dp"
+         android:text="buy now"
+         android:textSize="18sp"
+         app:cornerRadius="20dp" />
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/recImage"
+            android:src="@drawable/uploadimg"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"/>
+
+        <TextView
+            android:id="@+id/recTitle"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/recImage"
+            android:text="Title"
+            android:textColor="@color/lavender"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/recPrice"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/recTitle"
+            android:text="price"
+            android:textAlignment="center"
+            android:textColor="@color/lavender"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/recQuantity"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/recPrice"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@id/recDesc"
+            android:text="quantity"
+            android:textAlignment="center"
+            android:textColor="@color/lavender"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/recDesc"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recTitle"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toEndOf="@id/recImage"
+            android:maxLines="1"
+            android:text="desc"
+            android:textColor="@color/lavender"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/delete_item"
+            android:layout_width="30dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="-10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/recPrice"
+            android:src="@drawable/baseline_clear_24"/>
+    </RelativeLayout>
+    <!-- Add additional CardViews here if needed -->
+
+</androidx.cardview.widget.CardView>
